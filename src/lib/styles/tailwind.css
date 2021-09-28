@@ -1,0 +1,15 @@
+@tailwind base;
+@layer base { 
+    /* custom CSS goes here */
+}
+
+@tailwind components;
+@layer components { 
+    /* custom CSS goes here */
+}
+
+@tailwind utilities;
+
+@layer utilities { 
+    /* custom CSS goes here */ 
+}
