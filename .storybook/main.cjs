@@ -8,7 +8,4 @@ module.exports = {
     "@storybook/addon-essentials",
     "@storybook/addon-svelte-csf"
   ],
-  "svelteOptions": {
-    "preprocess": require("../svelte.config.js").preprocess
-  }
 }
