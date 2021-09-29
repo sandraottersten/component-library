@@ -37,15 +37,3 @@ Error.args = {
     variant: 'error',
     icon: ErrorIcon
 };
-
-export const Disabled = Template.bind({});
-Disabled.args = {
-	disabled: true,
-	placeholder: 'Example text'
-};
-
-export const ReadOnly = Template.bind({});
-ReadOnly.args = {
-	readonly: true,
-	value: 'Written text',
-};

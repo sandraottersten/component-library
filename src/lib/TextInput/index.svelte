@@ -20,6 +20,11 @@
 	 */
 	export let required = false;
 
+    /**
+	 * Placeholder for initial text
+	 */
+	export let placeholder = '';
+
 	/**
 	 * Input binded value
 	 */
@@ -30,20 +35,15 @@
 	 */
 	export let fullwidth = false;
 
-	/**
-	 * ID for connecting with label
-	 */
-	export let id = '';
-
-	/**
-	 * Placeholder for initial text
-	 */
-	export let placeholder = '';
-
-	/**
+    /**
 	 * Input icon
 	 */
 	export let icon = null;
+
+    /**
+	 * ID for connecting with label
+	 */
+	export let id = '';
     
 </script>
 
