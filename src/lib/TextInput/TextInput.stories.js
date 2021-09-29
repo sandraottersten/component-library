@@ -1,25 +1,51 @@
-import TextInput from './index.svelte'
-import TextInputOverview from './TextInputOverview.svelte'
-import "../_styles/tailwind.css"
+import TextInput from './index.svelte';
+import TextInputOverview from './TextInputOverview.svelte';
+import '../_styles/tailwind.css';
+import WarningIcon from '../_assets/icon_warning.svg';
+import ErrorIcon from '../_assets/icon_error.svg';
 
 export default {
-    title: 'Forms/TextInput',
-    component: TextInput,
-}
+	title: 'Forms/TextInput',
+	component: TextInput
+};
 
 export const Overview = ({ ...args }) => ({
-    Component: TextInputOverview,
-    props: args
-})
+	Component: TextInputOverview,
+	props: args
+});
 
 const Template = ({ ...args }) => ({
-    Component: TextInput,
-    props: args
-})
+	Component: TextInput,
+	props: args
+});
 
-export const Primary = Template.bind({})
+export const Default = Template.bind({});
+Default.args = {
+	placeholder: 'Example text'
+};
 
-export const Disabled = Template.bind({})
+export const Warning = Template.bind({});
+Warning.args = {
+	value: 'Written text',
+    variant: 'warning',
+    icon: WarningIcon
+};
+
+export const Error = Template.bind({});
+Error.args = {
+	value: 'Written text',
+    variant: 'error',
+    icon: ErrorIcon
+};
+
+export const Disabled = Template.bind({});
 Disabled.args = {
-    disabled: true
-}
+	disabled: true,
+	placeholder: 'Example text'
+};
+
+export const ReadOnly = Template.bind({});
+ReadOnly.args = {
+	readonly: true,
+	value: 'Written text',
+};

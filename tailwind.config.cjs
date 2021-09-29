@@ -4,13 +4,20 @@ const config = {
 		"./src/**/*.{html|svelte}",
 	],
     theme: {
+        extend: {
+            spacing: {
+                input: '20.5rem'
+            },
+        },
         minWidth: {
             buttonLarge: '11rem',
-            buttonSmall: '7rem'
+            buttonSmall: '7rem',
         },
         colors: {
             white: '#fff',
             black: '#000',
+            warning: '#FFAB07',
+            error: '#ED2E7E',
             form: {
                 100: 'var(--color-form-100, #EFF0F6)',
                 500: 'var(--color-form-500, ##A0A3BD)'
