@@ -1,2 +1,2 @@
-<script>import "../app.postcss";</script>
+<script>import "$lib/styles/tailwind.css";</script>
 <slot></slot>

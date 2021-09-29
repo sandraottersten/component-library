@@ -7,6 +7,16 @@ module.exports = {
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/addon-svelte-csf",
-    "@storybook/addon-postcss"
+    {
+      name: '@storybook/addon-postcss',
+      options: {
+        postcssLoaderOptions: {
+          implementation: require('postcss'),
+        },
+      },
+    },
   ],
+  "svelteOptions": {
+    "preprocess": require("../svelte.config.cjs").preprocess
+  }
 }
