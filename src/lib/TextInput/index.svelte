@@ -47,17 +47,16 @@
     
 </script>
 
-<div class={`relative ${fullwidth ? `w-full` : `w-input`}`}>
+<div class='relative {fullwidth ? 'w-full' : 'w-fullt sm:w-input'}'>
     {#if variant !== 'default'}
-        <img src={icon} alt="warning" class={`absolute right-4 z-10 top-1/2 transform -translate-y-1/2`}/>
+        <img src={icon} alt="warning" class='absolute right-4 z-10 top-1/2 transform -translate-y-1/2'/>
     {/if}
     <input
-        class={`py-4 pl-4 pr-12 bg-form-100 w-full
+        class='py-4 pl-4 pr-12 bg-form-100 w-full
         border-2 rounded-sm  outline-none disabled:text-dark-500 
-        ${variant === 'warning' && `border-warning focus:border-warning`}
-        ${variant === 'error' && `border-error focus:border-error`}
-        ${variant === 'default' && `border-dark-100 focus:border-primary-500`}
-        `}
+        {variant === 'warning' && 'border-warning focus:border-warning'}
+        {variant === 'error' && 'border-error focus:border-error'}
+        {variant === 'default' && 'border-dark-100 focus:border-primary-500'}'
         type="text"
         bind:value
         {id}

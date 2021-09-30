@@ -35,11 +35,10 @@
   <button
     on:click
     {disabled}
-    class={`flex justify-center items-center p-4 rounded-full focus:outline-none
+    class={`flex justify-center items-center p-4 rounded-full focus:outline-none text-md whitespace-nowrap
       ${fullwidth && `w-full`}
       ${size === 'large' && `h-14 min-w-buttonLarge px-6`}
       ${size === 'small' && `h-11 min-w-buttonSmall px-6`}
-      text-md whitespace-nowrap
       ${
         variant === 'primary' &&
         `bg-primary-500 hover:bg-primary-900 focus:ring-4 focus:ring-primary-100 focus:bg-primary-500
